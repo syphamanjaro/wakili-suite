@@ -1,0 +1,72 @@
+/* Basic styles for the homepage */
+
+.container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  background-color: #0070f3;
+  color: white;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.ctaButton {
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  background-color: #008c96;
+}
+
+.about,
+.features,
+.testimonials,
+.cta {
+  margin-top: 40px;
+}
+
+.featureList {
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature {
+  width: 30%;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #0070f3;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
