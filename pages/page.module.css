@@ -1,52 +1,108 @@
 /* page.module.css */
+
 .container {
-  font-family: 'Arial', sans-serif;
-  padding: 20px;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  color: #1f2937;
+  background-color: #f9fafb;
 }
 
 .hero {
-  background-color: #0073e6;
-  padding: 50px;
   text-align: center;
-  color: white;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  color: #ffffff;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
 }
 
 .ctaButton {
-  background-color: #0073e6;
-  color: white;
-  padding: 10px 20px;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background-color: #10b981;
   border: none;
+  border-radius: 0.5rem;
+  color: white;
   cursor: pointer;
-  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #059669;
 }
 
 .about, .features, .testimonials, .cta {
-  margin: 30px 0;
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.about h2, .features h2, .testimonials h2, .cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .featureList {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
 }
 
 .feature {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 30%;
+  flex: 1 1 30%;
+  background-color: #f3f4f6;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
   text-align: center;
+}
+
+.feature h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #4b5563;
 }
 
 .footer {
-  background-color: #333;
-  color: white;
-  padding: 20px;
   text-align: center;
+  padding: 2rem;
+  background-color: #e5e7eb;
+  border-radius: 1rem;
+  margin-top: 2rem;
 }
 
-.footerLinks a, .socialLinks a {
-  color: white;
-  margin: 0 10px;
+.footerLinks, .socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer a {
+  color: #1f2937;
   text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
